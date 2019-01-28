@@ -14,7 +14,7 @@ app.get('/usuario', function (req, res) {
   app.put('/usuario/:id', function (req, res) {
    let id=req.param.id;
     res.json({
-       id:id
+       id
     });
   });
   
