@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(require('./routes/usuario'));
 // respond with "hello world" when a GET request is made to the homepage
 
-   mongoose.connect('mongodb://localhost:27017/cafe',(err,res)=>{
+   mongoose.connect(process.env.urlDB,(err,res)=>{
        if(err) throw err;
        console.log('base de datos online');
    });
